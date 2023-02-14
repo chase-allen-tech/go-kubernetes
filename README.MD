@@ -15,3 +15,11 @@ docker build -t chaseallen/go-app .
 docker push chaseallen/go-app:latest
 
 <!-- Deploy to minikube cluster -->
+kubectl create -f deployment.yaml
+kubectl get deployments
+kubectl get pods
+
+<!-- Exposing the go-app pod -->
+kubectl expose deployment my-go-app --type=NodePort --name=go-app-svc --target-port=3000 
+kubectl get svc
+minikube ip
