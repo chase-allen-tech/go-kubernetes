@@ -1,3 +1,5 @@
+https://www.bogotobogo.com/GoLang/GoLang_Web_Building_Docker_Image_and_Deploy_to_Kubernetes.php
+
 docker login
 
 docker build -t go-app-img .
